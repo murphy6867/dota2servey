@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" {IF CLASSES}class="classes"{/IF}>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poiret+One&family=Roboto&display=swap" rel="stylesheet">
+   <title>Dota2 Survey</title>
+ </head>
+ <body>
+   <div id="container">
+    <h1 id="title">Dota2 Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Name :</lebel>
+  <input id="name" type="text" name="name" placeholder="Your Name..." required></input>
+<br><br>
+  <label for="email" id="email-label">Email :</label>
+  <input id="email" type="email" name="email" placeholder="Your Email..." required></input>
+<br><br>
+  <label for="number" id="number-label">Age :</label>
+  <input id="number" type="number" name="number" placeholder="Your Age..." min="10" max="80" required></input>
+<br><br>
+  <lable for="dropdown" id="role">Which role do you play in Dota2 :</lable>
+  <select id="dropdown">
+  <option value="Position1">Position 1: Carry/Safelane</option>
+  <option value="Position2">Position 2: Mid-laner</option>
+  <option value="Position3">Position 3: Off-lane</option>
+  <option value="Position4">Position 4: Roaming Support</option>
+  <option value="Position5">Position 5: Hard Support</option>
+  </select>
+<br>
+<lable for="time_to_play" id="time_play"><br><b>How many time do you play as Dota2 :</b><br></label>
+  <input type="radio" id="time_play" name="timetoplaydota2" value="~1">                         <lable for="1-2">~1 Hr</lable><br>
+          <input type="radio" id="time_play" name="timetoplaydota2" value="1-3">                         <lable for="1-3">1-3 Hr</lable><br>
+          <input type="radio" id="time_play" name="timetoplaydota2" value="3-6">                         <lable for="3-6">3-6 Hr</lable><br>
+          <input type="radio" id="time_play" name="timetoplaydota2" value="6~">                         <lable for="6~">6~ Hr</lable>
+<br><br>
+  <label for="player_exp"><b>Which is class item do you have in Dota2 :</b></label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Common">
+  <label for="checkbox">Common</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Uncommon">
+  <label for="checkbox">Uncommon</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Rare">
+  <label for="checkbox">Rare</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Mythical">
+  <label for="checkbox">Mythical</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Immortal">
+  <label for="checkbox">Immortal</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Legendary">
+  <label for="checkbox">Legendary</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Arcana">
+  <label for="checkbox">Arcana</label>
+<br>
+  <input id="checkbox" type="checkbox" name="player_exp" value="Ancient">
+  <label for="checkbox">Ancient</label>
+<br><br>
+<label id="textarea"><b>Additional Comments :</b></label>
+<br>
+<textarea id="textarea" name="instructions" row="20" cola="100" placeholder="Comments..."></textarea>
+<br><br>
+<input id="submit" type="submit" value="Submit">
+</form>
+</div>
+</body>
+<html>
